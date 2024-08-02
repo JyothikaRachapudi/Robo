@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="Mystyles1.css">
+    <script>
+        
+        function loginvalidion(){
+            var uname=document.my.username.value;
+            var pass=document.my.password.value;
+            if(uname=="null"||uname== ""){
+              alert("Name cannot be blank");
+              return false;
+            }
+            else if(pass.length<6){
+              alert("Password must be 6 letters");
+              return false;
+            }
+            else{
+                return true;
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li> <a href="news.html"> About </a></li>
+                <li><a href="about.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="JS22-loginvalidion.html">Login</a></li>
+                <li><a href="ADDTOCART.html">Add To Cart</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <center>
+    <form name="my"  action="loginsucess.html" onsubmit="return loginvalidion(this)">
+        <h3>Login Form:</h3>
+        User Name:<input type="text"name="username"><br>
+        Password:<input type="password"name="password"><br> 
+                 <input type="submit">
+                </form>
+    </center>
+</body>
+</html>

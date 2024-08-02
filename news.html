@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Mystyles1.css">
+<style>
+const styles{
+  margin:'18px',
+  boxSizing:'border-box',
+  borderRadius:'6px',
+  boxShadow:'0 4px 10px #000'
+}
+</style>
+<header>
+    <nav>
+    
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li> <a href="news.html"> About </a></li>
+            <li><a href="about.html">Products</a></li>
+            <li><a href="contact.html"> Contact </a></li>
+            <li><a href= "Js22-loginvalidation.html"> Login </a></li>
+            <li> <a href="ADDTOCART.html"> Add To Cart </a></li>          
+        </ul>
+ 
+    </nav>
+</header>
+<style>
+.mySlides {display:none;}
+</style>
+
+<body>
+
+<div class="w3-container">
+  <h2>Our Events</h2>
+  <p>Our Company Provide lastest news of AI which is Replaced Humans It is a booming Technology</p></div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="2018_05_art_3_2_845.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Sophia AI
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img 4.avif" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Open AI
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img 3.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    AI Anchors
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img 2.png" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    AI of Brand News
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="img1.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    News Of AI GT5 !
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<center>
+  <div style={styles}>
+    <h1>About Us</h1>
+    <h2>The Hanson AI framework includes symbolic reasoning and a hypergraph knowledge database, combined with various in-depth learning tools and numerous machine perception technologies, within a unified platform for both R&D and products.</h2></div>
+</center>
+
+</body>
+</html>

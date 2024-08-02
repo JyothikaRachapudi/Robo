@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="Mystyles1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li> <a href="news.html"> About </a></li>
+            <li><a href="about.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Js22-loginvalidation.html">Login</a></li>
+            <li><a href="ADDTOCART.html">Add To Cart</a></li>
+        </ul>
+    </nav>
+</header>
+        <center>
+            <h1>HOW TO MANSON AI WORKS</h1>
+     <div class="Container">
+        <div class="tot">    
+        <div class="image">
+         <img src="images (4).jpeg" height="200%" width="200%"></div>
+       </div>
+      <div class="text">
+    <p>Manson AI Is a term that doesn’t seem to have a widely recognized or specific reference in the field of artificial intelligence. It’s possible that it could be a name of a project, a company, or a specific AI tool that isn’t widely known or documented.
+
+        If you have any more details or context about where you heard about Manson AI, I can help you better. Alternatively, if you’re interested in AI in general, I can provide information on various AI technologies, applications, or recent advancements. Let me know how you’d like to proceed! </p>
+      </div>
+    </div> 
+    </div>
+    
+        <h2>Here are some Results..</h2>
+        <!--  
+        <div class="imgcontainer">
+            <img src="https___hypebeast.com_wp-content_blogs.dir_6_files_2021_01_sophia-the-robot-hanson-robotics-mass-production-launch-healthcare-retail-grace-announcement-00.avif"   height="250" width="250"/>
+        </div>
+       <div class="imgcontainer" >
+        <img src="image1170x530cropped.jpg" height="250" width="250"/>
+       </div>
+       <div class="imgcontainer"  >
+        <img src="images (5).jpeg"height="250" width="250"/>
+       </div>
+       <div class="imgcontainer">
+        <img src="images (7).jpeg"   height="250" width="250"/>
+    </div>
+   <div class="imgcontainer" >
+    <img src="images (6).jpeg" height="250" width="250"/>
+   </div>
+  -->
+  <div class="w3-content w3-section" style="max-width:500px">
+    <img class="mySlides" src="https___hypebeast.com_wp-content_blogs.dir_6_files_2021_01_sophia-the-robot-hanson-robotics-mass-production-launch-healthcare-retail-grace-announcement-00.avif" style="width:100%">
+    <img class="mySlides" src="image1170x530cropped.jpg" style="width:100%">
+    <img class="mySlides" src="images (5).jpeg" style="width:100%">
+    <img class="mySlides" src="images (6).jpeg" style="width:100%">
+    <img class="mySlides" src="images (7).jpeg" style="width:100%">
+    </div>
+</center>
+<script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+</html>
